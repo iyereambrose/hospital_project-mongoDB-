@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hospital Project — Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">Hospital Project</div>
+    <div class="top-actions">
+        <button id="logout" class="btn">Logout</button>
+    </div>
+</header>
+
+<div class="app">
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li class="active">Overview</li>
+                <li>Patients</li>
+                <li>Appointments</li>
+                <li>Staff</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <section class="welcome-card">
+            <h1 id="welcome">Welcome</h1>
+            <p id="subtitle">Loading account info…</p>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Active Patients</h3>
+                <p id="activePatients">—</p>
+            </div>
+            <div class="card">
+                <h3>Upcoming Appointments</h3>
+                <p id="appointments">—</p>
+            </div>
+            <div class="card">
+                <h3>Staff On Duty</h3>
+                <p id="staff">—</p>
+            </div>
+        </section>
+
+        <section class="notes">
+            <h2>Notes</h2>
+            <p class="muted">This is a lightweight admin dashboard for Hospital Project.</p>
+        </section>
+    </main>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
